@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edge Inspired Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header id="navbar">
+    <nav class="container">
+      <h1 class="logo">EdgeCompany</h1>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container hero-content">
+      <img src="https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=612x612&w=0&k=20&c=2GLUy6eqCSr0NFRO8CHm8_PUMy9Qc8ryqcsRoe0DEYM=" 
+           alt="Welcome Image" 
+           class="hero-img" />
+      <div class="hero-text">
+        <h1>Welcome to EdgeCompany</h1>
+        <p>Your Trusted Partner in Financial Solutions</p>
+        <a href="#services" class="btn">Explore Services</a>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container about-content">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+          At EdgeCompany, we provide world-class financial consulting and wealth
+          management solutions that help businesses grow smarter and faster.
+        </p>
+      </div>
+      <div class="about-img">
+        <img src="https://static.vecteezy.com/system/resources/previews/004/824/414/non_2x/solution-solving-problem-answer-to-hard-question-or-creativity-idea-and-innovation-help-business-success-leadership-to-overcome-difficulty-businessman-connect-question-mark-with-lightbulb-solution-vector.jpg" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="card">
+          <i class="fas fa-chart-line fa-2x"></i>
+          <h3>Financial Planning</h3>
+          <p>Personalized strategies to help you reach your financial goals.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-handshake fa-2x"></i>
+          <h3>Consulting</h3>
+          <p>Expert guidance to take your business to the next level.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-shield-alt fa-2x"></i>
+          <h3>Risk Management</h3>
+          <p>We help you minimize financial risks through planning and tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container contact-form">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 EdgeCompany. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Sticky Navbar
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('sticky', window.scrollY > 50);
+    });
+  </script>
+</body>
+</html>
